@@ -1,0 +1,19 @@
+<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+    <id>2a54c4d7-7d79-4615-b80d-ffc1107016a1</id>
+    <name>Automation Test</name>
+    <parameter>
+        <name>Creator</name>
+        <key>Creator</key>
+        <value>NhatNH</value>
+    </parameter>
+    <parameter>
+        <name>Email</name>
+        <key>Email</key>
+        <value>hangnhat57@gmail.com</value>
+    </parameter>
+    <parameter>
+        <name>Website URL</name>
+        <key>Website</key>
+        <value>http://nhatnguyen.tech</value>
+    </parameter>
+</qa:environment>
