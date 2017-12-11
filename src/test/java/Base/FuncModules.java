@@ -145,6 +145,7 @@ public class FuncModules {
     }
 
     public void _SwitchToFrame(WebElement iframe){
+        _WaitFor(iframe);
         driver.switchTo().frame(iframe);
     }
     public void _SwitchToFrame(String id){
