@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1519625497530" stop="1519625511674" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Selectmenu</name>
+    <description type="text"></description>
+    <test-cases>
+        <test-case start="1519625497533" stop="1519625511673" status="passed">
+            <name>I want to handle Jquery select</name>
+            <title>I want to handle Jquery select</title>
+            <description type="text"></description>
+            <steps>
+                <step start="1519625503269" stop="1519625511007" status="passed">
+                    <name>Given I navigate to "https://jqueryui.com/selectmenu/#default"</name>
+                    <title>Given I navigate to "https://jqueryui.com/selectmenu/#default"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1519625511007" stop="1519625511287" status="passed">
+                    <name>When I click on Select a speed drop down list</name>
+                    <title>When I click on Select a speed drop down list</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1519625511287" stop="1519625511455" status="passed">
+                    <name>And I choose "Fast" option</name>
+                    <title>And I choose "Fast" option</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1519625511455" stop="1519625511598" status="passed">
+                    <name>Then The Select a speed drop down list should display "Fast"</name>
+                    <title>Then The Select a speed drop down list should display "Fast"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="I want to handle Jquery select"/>
+                <label name="feature" value="Selectmenu"/>
+                <label name="host" value="Nhats-MacBook-Pro.local"/>
+                <label name="thread" value="45959@Nhats-MacBook-Pro.local.main(1)"/>
+                <label name="framework" value="CucumberJVM"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="feature" value="Selectmenu"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

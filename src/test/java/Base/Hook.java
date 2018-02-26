@@ -15,9 +15,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,7 +47,7 @@ public class Hook extends BaseUtils {
     private final String Env = getEnvirOf("ENVIRONMENT");
 
     @Before
-    public void TestInit(Scenario scenario){
+    public void TestInit(Scenario scenario) throws Exception {
         System.out.println("\n");
         System.out.println("========(^.^) Execute "+ scenario.getName() + " in "+Env + " with " + browser +" on " + os+" (^.^)========");
         System.out.println("\n");
@@ -71,6 +73,9 @@ public class Hook extends BaseUtils {
                 EdgeDriverManager.getInstance().setup();
                 base.driver = new EdgeDriver();
                 break;
+            case "remote-chrome":
+                base.driver = RemoteChrome();
+                break;
         }
 
     }
@@ -89,6 +94,14 @@ public class Hook extends BaseUtils {
      String getEnvirOf(String keyword){
         Map<String, String> dot = DotEnv.load();
         return dot.get(keyword);
+    }
+    private RemoteWebDriver RemoteChrome() throws Exception {
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments(browser_size());
+        if (mode.equals("headless")) {
+            option.addArguments("--headless");
+        }
+        return new RemoteWebDriver(new URL("http://localhost:35029/wd/hub"), option);
     }
 
 }

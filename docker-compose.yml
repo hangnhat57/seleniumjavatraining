@@ -1,0 +1,36 @@
+version: '2.1'
+
+services:
+  hub:
+    image: elgalu/selenium
+    ports:
+      - 35029:4444
+    volumes:
+      - /dev/shm:/dev/shm
+    privileged: true
+    environment:
+      - PICK_ALL_RANDOM_PORTS=true
+      - SELENIUM_HUB_HOST=hub
+      - SELENIUM_HUB_PORT=4444
+      - GRID=true
+      - CHROME=false
+      - FIREFOX=false
+  chrome:
+    image: elgalu/selenium
+    depends_on:
+      - hub
+    volumes:
+      - /dev/shm:/dev/shm
+    privileged: true
+    environment:
+      - PICK_ALL_RANDOM_PORTS=true
+      - SELENIUM_HUB_HOST=hub
+      - SELENIUM_HUB_PORT=4444
+      - SELENIUM_NODE_HOST={{CONTAINER_IP}}
+      - SCREEN_WIDTH=1300
+      - SCREEN_HEIGHT=999
+      - GRID=false
+      - CHROME=true
+      - FIREFOX=false
+      - MAX_INSTANCES=16
+      - MAX_SESSIONS=16
