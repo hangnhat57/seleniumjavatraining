@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb04bdb1-55a1-4ae2-9a4e-517a8c881b73" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/docker-compose.yml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/seleniumjavatraining.iml" afterPath="$PROJECT_DIR$/java-selenium-automation.iml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base/Hook.java" afterPath="$PROJECT_DIR$/src/test/java/Base/Hook.java" />
-    </list>
+    <list default="true" id="cb04bdb1-55a1-4ae2-9a4e-517a8c881b73" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -357,7 +352,7 @@
       <updated>1519620029707</updated>
       <workItem from="1519620034034" duration="509000" />
       <workItem from="1519625234631" duration="30000" />
-      <workItem from="1519625291568" duration="611000" />
+      <workItem from="1519625291568" duration="637000" />
     </task>
     <servers />
   </component>
@@ -367,7 +362,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1150000" />
+    <option name="totallyTimeSpent" value="1176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
